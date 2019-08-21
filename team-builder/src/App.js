@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import TeamList from './components/TeamList'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <header className="App-header">
         <h1>This is my Team Builder App</h1>
       </header>
+      <TeamList />
     </div>
   );
 }
