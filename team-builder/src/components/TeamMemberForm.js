@@ -16,8 +16,9 @@ const TeamMemberForm = function(props){
     // (obv but I need to deconstruct this a bit more to understand it fully)
     const submitForm = event => {
         event.preventDefault();
-        const newTm = {... tm, id: Date.now()};
-        props.addNewTm(newTm);
+        console.log('form submitted');
+        const newTm = {...tm, id: Date.now()};
+        props.addNewTeamMember(newTm);
         setTm({name:'', title:''});
     };
 
